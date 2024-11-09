@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 60s linear infinite;
+}
+
+.video-archive-background {
+  background-image: url('https://imgs.search.brave.com/FNS0SaLkqr1eOZwu6YGzi7pyiGTr7xG-tF0Vdb8FXrE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzY1LzI1LzIy/LzM2MF9GXzI2NTI1/MjI0OV9qakNraU5Y/UGJvblZ4d1pBRVo1/VjJtbERGY01aelN4/Wi5qcGc');
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  position: relative; /* Position relative for absolute children */
+  min-height: 100vh; /* Full viewport height */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite; /* Adjust the duration for speed */
+}
